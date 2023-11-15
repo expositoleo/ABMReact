@@ -15,7 +15,7 @@ export const ProductoService = {
     
     getProducto: async (id:number): Promise<Producto> => {
 
-        const response = await fetch (`${BASE_URL}/producto/${id}`);
+        const response = await fetch (`${BASE_URL}/producto/getAll${id}`);
         const data = await response.json();
         return data;
         
